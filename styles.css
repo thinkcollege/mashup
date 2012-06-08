@@ -1,0 +1,31 @@
+body { width: 1060px; font-family: verdana, arial, sans-serif; font-size: .9em; color: #333;background-color: #d8d2ce}
+#searchBox { border: 1px solid #57585b; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; padding: 9px; margin: 12px 30px; background-color: #fff; }
+#libCon, #nYt { width: 45%; float: left; margin-left: 30px;  border: 1px solid #57585b; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; padding: 9px; background-color: #fff; }
+#libCon h3 { font-size: 1em; }
+#nYt h3 { margin-bottom: 0; padding-bottom: 0; }
+#nYt h3 a { text-decoration: none; font-size: .9em; color: #005498; }
+#nYt h3 a:hover { text-decoration: underline; }
+#nYt p { margin: 0 5px; }
+h1 { font-size: 1.2em; color: maroon; text-align: center; }
+h2 { font-size: 1.1em; color: #4e624c; text-align: center; }
+.clearfix:after {
+     content: " "; 
+     display: block; 
+     height: 0; 
+     clear: both; 
+     visibility: hidden;
+	font-size: 0;
+}
+.accordionL, .accordionR { margin-top: 2px; }
+.artDate { font-style: italic; font-size: 88%; }
+.accordionL dt a,.accordionR dt a  { display: block; text-decoration: none; font-weight: bold; color: maroon; border: 1px solid #57585b; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 3px; width: 470px; margin-bottom: 3px; }
+.clearfix {display: inline-block;}
+a.preview {  }
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.floatEm { list-style: none; clear: both; }
+.floatEm li { list-style: none; float: left; padding: 3px 5px; }
+.hideFull { display: none;}
+.viewActive .hideFull { display: block; position: absolute; }
