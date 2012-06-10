@@ -43,8 +43,10 @@ foreach($locoutput['results'] as $key => $value)
 	<?php
 		foreach($value['subjects'] as $subject) echo '<a href="./?searchTerm=' . $subject . '">' . $subject . '</a><br />';
 	echo '</dd></dl>';	
-	}
-	
+	} 
+	// pagination again
+if($locoutput['pages']['page_list']) { echo '<ul class="floatEm clearfix">'; foreach($locoutput['pages']['page_list'] as $pageList) { $pagenum = $pageList['number']; $pageurl = $pageList['url']; echo '<li><a href="./?searchTerm=' . $searchTerm . '&pagenext=' . $pagenum . '&nytpage=' . $nytpage . '">' . $pagenum . '</a></li>'; } echo '</ul>';}
+	?></div><?php	
 
    $chii = curl_init();
 
@@ -63,7 +65,7 @@ $nytjson = curl_exec($chii); ;
  curl_close($chii);	
 	
 // get NYT data
-?></div><div id="nYt"><h2>New York Times Article Archives, 1981-2012</h2><?php
+?><div id="nYt"><h2>New York Times Article Archives, 1981-2012</h2><?php
 $nytoutput = json_decode($nytjson, true); 
 
 $nytpages = ceil($nytoutput['total']/10);  
